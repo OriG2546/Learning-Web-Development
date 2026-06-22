@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Formula 1 Drivers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(270deg,#0b0b0b,#141414,#1c0000,#0b0b0b);
+background-size:800% 800%;
+animation:racebg 20s ease infinite;
+color:white;
+}
+
+@keyframes racebg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+text-align:center;
+padding:30px;
+border-bottom:4px solid red;
+}
+
+h1{
+font-family:'Orbitron',sans-serif;
+font-size:42px;
+letter-spacing:3px;
+}
+
+.controls{
+text-align:center;
+margin:20px;
+}
+
+input{
+padding:10px;
+width:250px;
+border-radius:6px;
+border:none;
+}
+
+.team-section{
+margin:40px;
+}
+
+.team-title{
+font-size:28px;
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.team-logo{
+width:60px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1b1b1b;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px rgba(255,0,0,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px red;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.team{
+color:#ffd700;
+font-weight:bold;
+}
+
+.principal{
+color:#00e5ff;
+}
+
+.nickname{
+color:#ff7cff;
+font-style:italic;
+}
+
+.funfact{
+font-size:14px;
+margin-top:8px;
+color:#ccc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Formula 1 Drivers</h1>
+</header>
+
+<div class="controls">
+<input type="text" id="search" placeholder="Search driver..." onkeyup="searchDriver()">
+</div>
+
+<!-- MERCEDES -->
+<section class="team-section">
+
+<h2 class="team-title">
+<img src="images/img_mercedes.jpg" class="team-logo">
+Mercedes
+</h2>
+
+<div class="grid">
+<div class="card">
+<img src="images/img_lewis.png"
+style="width:600px; height:500px;">
+<h2>Lewis Hamilton</h2>
+<p class="team">Team: Mercedes</p>
+<p class="principal">Principal: Toto Wolff</p>
+<p class="nickname">King Lewis</p>
+<p class="funfact">Did you know?: Holds the record for the most F1 race wins.</p>
+</div>
+
+<div class="card">
+<img src="images/img_russell.png"
+style="width:455px; height:500px;">
+<h2>George Russell</h2>
+<p class="team">Team: Mercedes</p>
+<p class="principal">Principal: Toto Wolff</p>
+<p class="nickname">Mr Saturday</p>
+<p class="funfact">Did you know?: Won the Formula 2 championship in 2018.</p>
+</div>
+</div>
+</section>
+
+<!-- RED BULL -->
+<section class="team-section">
+
+<h2 class="team-title">
+<img src="images/img_redbull.png" class="team-logo">
+Red Bull Racing
+</h2>
+
+<div class="grid">
+<div class="card">
+<img src="images/img_max.png"
+style="width:455px; height:500px;">
+<h2>Max Verstappen</h2>
+<p class="team">Team: Red Bull</p>
+<p class="principal">Principal: Christian Horner</p>
+<p class="nickname">Mad Max</p>
+<p class="funfact">Did you know?: Youngest driver to ever start an F1 race.</p>
+</div>
+
+<div class="card">
+<img src="images/img_perez.png"
+style="width:455px; height:500px;">
+<h2>Sergio Perez</h2>
+<p class="team">Team: Red Bull</p>
+<p class="principal">Principal: Christian Horner</p>
+<p class="nickname">Checo</p>
+<p class="funfact">Did you know?: Famous for tyre management.</p>
+</div>
+</div>
+</section>
+
+<!-- FERRARI -->
+<section class="team-section">
+
+<h2 class="team-title">
+<img src="images/img_ferarri.png" class="team-logo">
+Ferrari
+</h2>
+
+<div class="grid">
+<div class="card">
+<img src="images/ing_leclerc.png"
+style="width:455px; height:500px;">
+<h2>Charles Leclerc</h2>
+<p class="team">Team: Ferrari</p>
+<p class="principal">Principal: Frederic Vasseur</p>
+<p class="nickname">Il Predestinato</p>
+<p class="funfact">Did you know?: First Monégasque Ferrari race winner.</p>
+</div>
+
+<div class="card">
+<img src="images/img_carlos.png"
+style="width:455px; height:500px;">
+<h2>Carlos Sainz</h2>
+<p class="team">Team: Ferrari</p>
+<p class="principal">Principal: Frederic Vasseur</p>
+<p class="nickname">Smooth Operator</p>
+<p class="funfact">Did you know?: Son of rally legend Carlos Sainz Sr.</p>
+</div>
+</div>
+</section>
+
+<!-- MCLAREN -->
+<section class="team-section">
+
+<h2 class="team-title">
+<img src="images/img_mclaren.png" class="team-logo">
+McLaren
+</h2>
+
+<div class="grid">
+<div class="card">
+<img src="images/img_norris.png"
+style="width:455px; height:500px;">
+<h2>Lando Norris</h2>
+<p class="team">Team: McLaren</p>
+<p class="principal">Principal: Andrea Stella</p>
+<p class="nickname">Landinho</p>
+<p class="funfact">Did you know?: Runs a famous esports team.</p>
+</div>
+
+<div class="card">
+<img src="images/img_oscar.png"
+style="width:455px; height:500px;">
+<h2>Oscar Piastri</h2>
+<p class="team">Team: McLaren</p>
+<p class="principal">Principal: Andrea Stella</p>
+<p class="nickname">Ice Boy</p>
+<p class="funfact">Did you know?: Won F3 and F2 championships consecutively.</p>
+</div>
+</div>
+</section>
+
+<script>
+function searchDriver(){
+let input=document.getElementById("search").value.toLowerCase()
+let cards=document.querySelectorAll(".card")
+cards.forEach(card=>{
+let name=card.querySelector("h2").innerText.toLowerCase()
+if(name.includes(input)) card.style.display="block"
+else card.style.display="none"
+})
+}
+</script>
+
+</body>
+</html>
